@@ -1,7 +1,9 @@
 @keyframes fon{
-    50% {background-color: pink;}
+    33% {background-color: pink;}
+    33% {background-color: aquamarine;}
 }
 
 body {
     animation: fon 5s infinite 1s ease-in-out;
 }
+
