@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            margin: 10% 0;
+        }
+        div {
+            margin: 10% 0;
+        }
+        .container {
+            width: 80%;
+            height: 10vh;
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+        }
+        .btn {
+            width: 20%;   
+            margin: 0.1%;
+            cursor: pointer;
+        }
+        .box:last-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Инженерный калькулятор</h1>
+    <form action="#" name="culc">
+        <div class="box">
+            <label for="">Первое число</label>
+            <input type="number" name="num1">            
+        </div>
+        <div class="box">
+            <label for="">Второе число</label>
+            <input type="number" name="num2">
+        </div>
+        <div class="container">
+            <input type="button" value="+" class="btn" onclick="">
+            <input type="button" value="-" class="btn" onclick="">
+            <input type="button" value="*" class="btn" onclick="operation(culc)">
+            <input type="button" value="/" class="btn" onclick="">
+            <input type="button" value="abs" class="btn" onclick="">
+            <input type="button" value="log" class="btn" onclick="">
+            <input type="button" value="min" class="btn" onclick="">
+            <input type="button" value="max" class="btn" onclick="">
+            <input type="button" value="sqrt" class="btn" onclick="">
+        </div>
+        <div class="box">
+            <label for="">Ответ</label>
+            <input type="number" name="res">
+            <label for="">Очистить</label>
+            <input type="button" value="Очистить">
+        </div>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
